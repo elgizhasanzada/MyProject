@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    #dolor {
-      color: red;
-      font-size: 20px;
-    }
-
-    .red-span {
-      color: red;
-      font-size: 50px;
-    }
-
-    .blue-span {
-      color: blue;
-      font-size: 40px;
-    }
-
-    /* span {
-      color: blue;
-    } */
-  </style>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first project</title>
-    <link rel="icon" href="/Images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" type="images/x-icon" />
+    <style>
+      #dolor {
+        color: red;
+        font-size: 20px;
+      }
+
+      .red-span {
+        color: red;
+        font-size: 50px;
+      }
+
+      .blue-span {
+        color: blue;
+        font-size: 40px;
+      }
+      .blue-span {
+        color: blue;
+        font-size: 40px;
+      }
+
+      .table1 {
+        width: 100%;
+      }
+
+      .table1 th {
+        width: 100px;
+        height: 50px;
+        border-width: 10px;
+      }
+      .table1 td {
+        text-align: center;
+      }
+
+      /* span {
+        color: blue;
+      } */
+    </style>
+    <script>
+      function changeButtonText() {
+        document.getElementById('button').innerHTML =
+          'Hello guys ' + Math.round(Math.random() * 100);
+      }
+    </script>
   </head>
   <body>
-    <header id="header">
+    <header id="header" style="height: 100px">
       <h1 class="blue-span">
         <span>This is my H1 header tag</span>
       </h1>
     </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/HTML/About.html">About page</a>
+        </li>
+        <li>
+          <a href="/HTML/About.html">About page</a>
+        </li>
+        <li>
+          <a href="/HTML/About.html">About page</a>
+        </li>
+      </ul>
+    </nav>
     <div>
       <h1 class="blue-span">Food</h1>
       <h3>This is h3</h3>
@@ -186,7 +223,7 @@
 
     <br />
 
-    <button>Change</button>
+    <button onclick="changeButtonText()" id="button">Change</button>
 
     <ul>
       <li>First line</li>
@@ -204,9 +241,9 @@
 
     <ol type="a">
       <li>First line</li>
-      <li>Second line</li>
-      <li>Third line</li>
-      <li>Fourth line</li>
+      <li>Aecond line</li>
+      <li>Bhird line</li>
+      <li>Courth line</li>
     </ol>
 
     <ol type="I">
@@ -241,11 +278,188 @@
         <a href="/HTML/About.html" target="_blank">Go to About page</a>
       </li>
     </ul>
+
+    <img src="/Images/img_sem_elements.gif" alt="" />
     <!-- body footer nav header -->
 
-    <br /><br />
-    <br /><br />
-    <br /><br />
+    <!--
+
+       .table1 th {
+        width: 50px;
+        height: 50px;
+      }
+
+    -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <table border="1" class="table1" style="width: 100%">
+      <tr>
+        <th style="width: 30%">Name</th>
+        <th>Surname</th>
+      </tr>
+
+      <tr>
+        <td>Elgiz</td>
+        <td>Hasanzada</td>
+      </tr>
+
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+      </tr>
+    </table>
+    <br />
+
+    <hr />
+
+    <br />
+
+    <table style="width: 100%" border="1">
+      <colgroup>
+        <col style="background-color: yellow" />
+        <col style="background-color: red" />
+        <col style="background-color: blue" />
+      </colgroup>
+      <tr>
+        <th>Firstname</th>
+        <td>John</td>
+        <td>John</td>
+      </tr>
+      <tr>
+        <th>Surname</th>
+        <td>Smith</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>35</td>
+        <td>23</td>
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <table style="width: 100%" border="1">
+      <tr>
+        <th colspan="2">Full name</th>
+        <th>Age</th>
+      </tr>
+
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>24</td>
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <table border="1" style="width: 100%">
+      <thead></thead>
+      <tr>
+        <th>Surname</th>
+        <td>Smith</td>
+      </tr>
+
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-5551-11111</td>
+      </tr>
+
+      <tr>
+        <td>11-1111-11111-11</td>
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <audio
+      src="/Images/Imagine Dragons - Believer (Official Music Video).mp3"
+      controls
+    ></audio>
+    <br />
+    <hr />
+    <br />
+
+    <video
+      style="width: 40%"
+      src="/Images/Solar System 101 _ National Geographic.mp4"
+      controls
+    ></video>
+    <br />
+    <hr />
+    <br />
+
+    <iframe
+      src="http://127.0.0.1:5500/HTML/About.html"
+      frameborder="4"
+    ></iframe>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <br /><br />
     <br /><br />
     <br /><br />
