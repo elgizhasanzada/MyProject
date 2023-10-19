@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="https://www.hashemian.com/tools/form-post-tester.php/"
+      method="POST"
+      target="_blank"
+    >
+      <label for="name">Name: </label>
+      <br />
+      <input type="text" placeholder="name" id="name" name="username" />
+      <br />
+      <label for="surname"> Surname:</label>
+      <br />
+      <input type="text" placeholder="surname" id="surname" name="surname" />
+
+      <input type="submit" value="Register" />
+    </form>
+    <br />
+    <hr />
+    <br />
+    <p>Choose your favourite language:</p>
+    <form>
+      <input type="radio" value="HTML" id="HTML" name="favourite_language" />
+      <label for="HTML">HTML</label> <br />
+
+      <input type="radio" value="CSS" id="CSS" name="favourite_language" />
+      <label for="CSS">CSS</label>
+      <br />
+      <input type="radio" value="JS" id="JS" name="favourite_language" />
+      <label for="JS">JS</label>
+    </form>
+    <br />
+    <hr />
+    <br />
+
+    <form
+      action="https://www.hashemian.com/tools/form-post-tester.php/"
+      method="POST"
+      target="_blank"
+    >
+      <input type="checkbox" id="color1" name="color1" value="Red_Color" />
+      <label for="color1">Red</label>
+      <br />
+
+      <input type="checkbox" id="color2" name="color2" value="Blue_Color" />
+      <label for="color2">Blue</label>
+
+      <br />
+
+      <input type="checkbox" id="color3" name="color3" value="Green_Color" />
+      <label for="color3">Green</label>
+
+      <br />
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <br />
+    <hr />
+    <br />
+    <form
+      action="https://www.hashemian.com/tools/form-post-tester.php/"
+      method="post"
+      target="_blank"
+    >
+      <label for="colors">Choose a color:</label>
+
+      <select name="selected_color" id="colors">
+        <option value="red">Red</option>
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="green">Green</option>
+      </select>
+      <br />
+      <input type="submit" />
+    </form>
+
+    <br />
+    <hr />
+    <br />
+    <textarea cols="30" rows="10" style="height: 200px; width: 600px">
+
+    This area for colors:
+    </textarea>
+
+    <form
+      action="https://www.hashemian.com/tools/form-post-tester.php/"
+      method="POST"
+      target="_blank"
+    >
+      <fieldset>
+        <legend>Registration</legend>
+        <label for="name">Name: </label>
+        <br />
+        <input type="text" placeholder="name" id="name" name="username" />
+        <br />
+        <label for="surname"> Surname:</label>
+        <br />
+        <input
+          type="text"
+          placeholder="surname"
+          id="surname"
+          name="surname"
+          required
+        />
+        <br />
+        <label for="email"> Email:</label>
+        <br />
+
+        <input
+          type="email"
+          placeholder="Email"
+          id="Email"
+          name="Email"
+          required
+        />
+        <br />
+        <label for="password">Password:</label> <br />
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
+        <br />
+
+        <br />
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+
+    <br /><br />
+
+    <label for="range">Quantity:</label>
+
+    <input type="number" name="range" id="range" />
+
+    <br />
+    <hr />
+    <br />
+
+    <br />
+    <hr />
+    <br />
+  </body>
+</html>
