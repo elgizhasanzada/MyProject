@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBUCKS</title>
+</head>
+<body>
+    <h1>COFFEE SHOPS ARE RIPPING US OFF!</h1>
+    <h3>WHY STARBUCKS IS OVERPRICED?</h3>
+    <a href="https://www.starbucks.vn/" target="_blank">
+        <img src="food.jpg" alt="the food" width="200" height="300">
+    </a>
+    <link rel="icon" href="love.ico" type="image/x-icon">
+    The food is yummy but we should avoid it if it makes you <a href="http://dictionary.cambridge.org/dictionary/english/unhappy" target="_blank">UNHAPPY</a>!
+    <br>
+    <table>
+        <tr>
+            <th>FOOD</th>
+        </tr>
+        <tr>
+            <th>GYM</th>
+        </tr>
+    </table>
+    <a href="http://dictionary.cambridge.org/dictionary/english/food" target="_blank" rel="noopener noreferrer">CLICK HERE TO KNOW WHAT IS FOOD</a>
+</body>
+
+<h2>UNORDERED FOOD LIST</h2>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<h2>ORDERED FOOD LIST</h2>
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<h1>ISRAEL VS PALESTINE</h1>
+<p>Israel-Hamas war rages as Palestinian death toll rises in Gaza</p>
+<blockquote>
+    Fears for civilians are growing as Israel says it is gearing up for the next stages of its war with Hamas, including widespread strikes and "significant ground operations."
+    Israel launched the retaliatory offensive after Hamas' October 7 terror attacks that killed 1,300 people.
+    Conditions in Gaza have deteriorated into a "complete catastrophe," aid workers say, as tens of thousands of Palestinians attempt to flee.
+    The IDF has said it will "commence significant military operations only once we see that civilians have left the area."
+    The Pentagon has ordered a second carrier strike group to the eastern Mediterranean and is sending Air Force fighter jets to the region. The warships are not intended to take part in Israel's operations but to deter others from entering the conflict, such as Iran and Hezbollah.
+    Here's how to help humanitarian efforts in Israel and Gaza.
+    <cite><a href="https://edition.cnn.com/middleeast/live-news/israel-news-hamas-war-10-15-23/index.html">Source</a></cite>
+</blockquote>
+
+<h1>Pizza Menu</h1>
+<h3>If you want to order pizza, please look at our brand new menu that we created with love and passion!</h3>
+<table style="background-color: aquamarine; margin: 0 auto;">
+    <tr>
+        <th>Type</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Pepperoni Pizza</td>
+        <td>Mozarella Cheese, Pepperoni</td>
+        <td>$20.55</td>
+    </tr>
+    <tr>
+        <td>Four Cheese Pizza</td>
+        <td>Blue, Mozarella, Parmesan, Gouda</td>
+        <td>$15.55</td>
+    </tr>
+    <tr>
+        <td>Mushroom Pizza</td>
+        <td>Mushroom, Cheese, Creamy Sauce</td>
+        <td>$14.00</td>
+    </tr>
+</table>
+
+<h3>LOOK AT THIS YUMMY PIZZA</h3>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zVQafIh_8PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+<a href="http://www.youtube.com/watch?v=zVQafIh_8PM" target="_blank">Click Here If You Can't See The Video</a>
+
+<h3>What Pizza would you like to order?</h3>
+<form action="/action_page.php">
+    <input type="checkbox" name="Pizza" value="Pepperoni Pizza">Pepperoni Pizza
+    <br>
+    <input type="checkbox" name="Pizza" value="Four Cheese Pizza">Four Cheese Pizza
+    <br>
+    <input type="checkbox" name="Pizza" value="Mushroom Pizza">Mushroom Pizza
+    <br>
+    <br>
+    <input type="button" onclick="myFunction()" value="Send order">
+    <br><br>
+    <input type="text" id="order" size="50">
+    <input type="submit" value="Submit">
+</form>
+<script>
+    function myFunction() {
+        var pizza = document.forms[0];
+        var txt = "";
+        for (var i = 0; i < pizza.length; i++) {
+            if (pizza[i].checked) {
+                txt = txt + pizza[i].value + " ";
+            }
+        }
+        document.getElementById("order").value = " You ordered " + txt;
+    }
+</script>
+
+</html>
+<head>
+<style>
+    .all-browsers {
+        margin: 0;
+        padding: 5px;
+        background-color: lightgray;
+    }
+
+    .all-browsers > h1, .browser {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .browser {
+        background: white;
+    }
+
+    .browser > h2, p {
+        margin: 4px;
+        font-size: 90%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 5px;
+        background-color: DarkSalmon;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<h1>LET'S TALK ABOUT FOOD!</h1>
+
+<article class="all-browsers">
+    <h1>1. HOW TO BE HEALTHY?</h1>
+    <article class="browser">
+        <h2>1. Limit Unhealthy Foods and Eat Healthy Meals</h2>
+        <p>Do not forget to eat breakfast and choose a nutritious meal with more protein and fiber and less fat, sugar, and calories. For more information on weight-control foods and dietary recommendations, please check the following website: <a href="http://hsph.harvard.edu/obesity-prevention-source/obesity-causes/diet-and-weight/" target="_blank">hsph.harvard.edu/obesity-prevention-source/obesity-causes/diet-and-weight/</a></p>
+    </article>
+
+    <article class="browser">
+        <h2>2. Take Multivitamin Supplements</h2>
+        <p>To make sure you have sufficient levels of nutrients, taking a daily multivitamin supplement is a good idea, especially when you do not have a variety of vegetables and fruits at home. Many micronutrients are vital to your immune system, including vitamins A, B6, B12, C, D, and E, as well as zinc, iron, copper, selenium, and magnesium. However, there’s currently NO available evidence that adding any supplements or “miracle mineral supplements” to your diet will help protect you from the virus or increase recovery. In some cases, high doses of vitamins can be bad for your health.</p>
+    </article>
+    <article class="browser">
+        <h2>3. Drink Water and Stay Hydrated, and Limit Sugared Beverages</h2>
+        <p>Drink water regularly to stay healthy, but there is NO evidence that drinking water frequently (e.g. every 15 minutes) can help prevent any viral infection. For more information on drinking water and coronavirus, please check the following EPA website: <a href="http://epa.gov/coronavirus/coronavirus-and-drinking-water-and-wastewater" target="_blank">epa.gov/coronavirus/coronavirus-and-drinking-water-and-wastewater</a></p>
+    </article>
+</article>
+
+<footer>
+    <p>Author: Aytan Garayeva<br>
+    <a href="mailto:aytangaraeva@gmail.com">aytangaraeva@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

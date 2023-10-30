@@ -85,7 +85,7 @@
     <br />
     <hr />
     <br />
-    <textarea cols="30" rows="10" style="height: 200px; width: 600px">
+    <textarea cols="60" rows="20" form="userForm" name="comment">
 
     This area for colors:
     </textarea>
@@ -94,12 +94,20 @@
       action="https://www.hashemian.com/tools/form-post-tester.php/"
       method="POST"
       target="_blank"
+      novalidate
+      id="userForm"
     >
       <fieldset>
         <legend>Registration</legend>
-        <label for="name">Name: </label>
+        <label for="lname">Name: </label>
         <br />
-        <input type="text" placeholder="name" id="name" name="username" />
+        <input
+          type="text"
+          placeholder="name"
+          id="lname"
+          name="username"
+          autofocus
+        />
         <br />
         <label for="surname"> Surname:</label>
         <br />
@@ -115,7 +123,7 @@
         <br />
 
         <input
-          type="email"
+          type="text"
           placeholder="Email"
           id="Email"
           name="Email"
@@ -130,6 +138,23 @@
           name="password"
         />
         <br />
+        <label for="birthday">Birthday:</label> <br />
+        <input
+          type="date"
+          placeholder="birthday"
+          id="birthday"
+          name="birthday"
+          min="1900-06-06"
+          max="2030-06-06"
+        />
+        <br />
+        <label for="number">Phone Number: </label> <br />
+        <input type="text" id="number" name="number" pattern="[0-5]{5}" />
+        <br />
+
+        <label for="file">Upload your file:</label> <br />
+        <input type="file" placeholder="file" id="file" name="file" multiple />
+        <br />
 
         <br />
         <input type="submit" value="Register" />
@@ -141,7 +166,27 @@
 
     <label for="range">Quantity:</label>
 
-    <input type="number" name="range" id="range" />
+    <input type="number" name="range" id="range" step="3" min="1" max="20" />
+
+    <br /><br />
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser" />
+
+    <datalist id="browsers">
+      <option value="Edge"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari"></option>
+    </datalist>
+
+    <form>
+      <label for="number">
+        <input type="text" id="number" name="number" pattern="[0-9]{5}" />
+      </label>
+    </form>
+
+    <input type="search" />
 
     <br />
     <hr />
